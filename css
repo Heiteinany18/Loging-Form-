@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  width: 350px;
+  height: 500px;
+  padding: 40px;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+}
+
+.brand-logo {
+  height: 100px;
+  width: 100px;
+  background-image: url('https://img.icons8.com/color/100/000000/twitter--v2.png');
+  margin: auto;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+h2 {
+  color: #03a9f4;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 6px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.form-group label {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+  color: #777;
+}
+
+.form-group input {
+  padding: 10px;
+  padding-left: 20px;
+  border-radius: 50px;
+  font-size: 14px;
+  border: none;
+}
+
+.form-group button {
+  background-color: #03a9f4;
+  height: 40px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-weight: 800;
+  cursor: pointer;
+  color: white;
+  border: none;
+  transition: 0.5s;
+  margin-top: 0.4rem;
+}
+
+.form-group button:hover {
+  box-shadow: none;
+}
+
+label,
+input,
+button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  color: gray;
+}
+
+input::placeholder {
+  color: gray;
+}
+
+/* Dark Theme */
+@media(prefers-color-scheme: dark) {
+  body {
+    background-color: #131419;
+  }
+
+  .container {
+    background-color: #131419;
+    box-shadow: 14px 14px 20px #09090c, -14px -14px 20px #262626;
+  }
+
+  .brand-logo {
+    box-shadow: 7px 7px 10px #09090c, -7px -7px 10px #262626;
+  }
+
+  .brand-logo:active {
+    box-shadow: inset 7px 7px 10px #09090c, inset -7px -7px 10px #262626;
+  }
+
+  .form-group input {
+    background: #131419;
+    box-shadow: inset 6px 6px 6px #09090c, inset -6px -6px 6px #262626;
+  }
+
+  .form-group button {
+    box-shadow: 6px 6px 6px #09090c, -6px -6px 6px #262626;
+  }
+}
+
+/* Light Theme */
+@media(prefers-color-scheme: light) {
+  body {
+    background-color: #ecf0f3;
+  }
+
+  .container {
+    background-color: #ecf0f3;
+    box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+  }
+
+  .brand-logo {
+    box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+  }
+
+  .brand-logo:active {
+    box-shadow: inset 7px 7px 10px #cbced1, inset -7px -7px 10px white;
+  }
+
+  .form-group input {
+    background: #ecf0f3;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+  }
+
+  .form-group button {
+    box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+  }
+}
